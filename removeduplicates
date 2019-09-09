@@ -1,0 +1,7 @@
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        num = list(dict.fromkeys(nums))
+        length = len(num)
+        for i in range(length):
+            nums[i]= num[i]
+        return length
