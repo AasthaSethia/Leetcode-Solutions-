@@ -1,0 +1,8 @@
+class Solution:
+    def addDigits(self, num: int) -> int:
+        x = num//10
+        y = num%10
+        new = x+y
+        if(new>=10):
+            new = self.addDigits(new)
+        return new 
