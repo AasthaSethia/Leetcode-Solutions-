@@ -1,0 +1,10 @@
+class Solution:
+    def addToArrayForm(self, A: List[int], K: int) -> List[int]:
+        number = ""
+        for i in A:
+            number+=str(i)
+        number.strip()
+        int_number = int(number)
+        ans = int_number+K
+        res = list(map(int, str(ans))) 
+        return res
